@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Background Control</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* body{
+            
+        } */
+        [class^="task"] {
+            margin: 10px;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            margin-block: 20px;
+        }
+
+        .box {
+            border-radius: 10px;
+            background-image: url(4k-mountain.jpg);
+            border: 5px solid rgb(146, 39, 0);
+            backdrop-filter: blur(10px);
+            width: 90%;
+            min-height: 20vh;
+            margin: auto;
+            transition: all 0.5s ease-in-out;
+        }
+        .box:hover{
+            box-shadow: 2px 2px 8px black;
+            transform: scale(1.03);
+        }
+
+        .size-cover {
+            background-size: cover;
+        }
+
+        .size-contain {
+            background-size: contain;
+        }
+
+        .size-100 {
+            background-size: 100% 100%;
+        }
+
+        .repeat {
+            background-repeat: repeat-x;
+            background-size: contain;
+        }
+
+        .no-repeat {
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .position {
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: bottom right;
+        }
+
+        .clip {
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-clip: content-box;
+        }
+
+        .origin {
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-origin: border-box;
+        }
+
+        .profile-card {
+            width: 70%;
+            border-radius: 16px;
+            overflow: hidden;
+            text-align: center;
+            font-family: sans-serif;
+            margin: auto;
+        }
+        
+        .banner {
+            height: 70vh;
+            background: linear-gradient(to bottom, rgba(0, 128, 128, 0.6), rgba(0, 64, 128, 0.8)),
+                url(red\ hooded\ devil.jpg);
+            background-size: 100% 100%;
+              background-clip: padding-box;
+               display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+        }
+        .avatar {
+  width: 40%;
+  height: 40%;
+  border-radius: 100%;
+  background: url(4k-mountain.jpg) center/cover no-repeat;
+  margin: 0px auto;
+  border: 4px solid white;
+}
+.name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.role {
+  font-size: 1.5rem;
+  color: #ddd;
+}
+    </style>
+</head>
+
+<body>
+    <h1>Advanced Background Control</h1>
+    <div class="container">
+        <div class="task1">
+            <h1>Task 1</h1>
+            <div class="box size-cover">background-size: cover</div>
+            <div class="box size-contain">background-size: contain</div>
+            <div class="box size-100">background-size: 100% 100%</div>
+        </div>
+        <div class="task2">
+            <h1>Task 2</h1>
+            <div class="box repeat">background-repeat: repeat</div>
+            <div class="box no-repeat">background-repeat: no-repeat</div>
+        </div>
+        <div class="task3">
+            <h1>Task 3</h1>
+            <div class="box position"></div>
+        </div>
+        <div class="task4">
+            <h1>Task 4</h1>
+            <div class="box clip">background-clip: content-box</div>
+            <div class="box origin">background-origin: border-box</div>
+        </div>
+        <div class="task5">
+            <h1>Grand task</h1>
+            <div class="profile-card">
+                <div class="banner">
+                    <div class="avatar"></div>
+                    <h2 class="name">Sharjeerl Arshad</h2>
+                    <p class="role">Mastermind of Future industry</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

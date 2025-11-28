@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 8 – Clip-Path, Mask-Image & Shape-Outside Showcase</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#fff6e9;
+  font-family:"Poppins",sans-serif;
+}
+
+/* 🔹 HERO SECTION  */
+.hero{
+  position:relative;
+  width:90%;
+  max-width:1000px;
+  border-radius:20px;
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  background:#ffe3a1;
+  border:3px solid #f9b94d;
+}
+
+/* 🔹 CLIP-PATH Banner */
+.banner{
+  width:100%;
+  height:250px;
+  background:url("https://picsum.photos/1000/250?blur") center/cover;
+  clip-path:polygon(0 0,100% 0,100% 85%,0 100%);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#fff;
+  font-size:2rem;
+  font-weight:700;
+  letter-spacing:1px;
+  text-shadow:0 0 10px rgba(0,0,0,.6);
+}
+
+/* 🔹 MASK-IMAGE Reveal */
+.logo{
+  margin-top:-80px;
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  background:url("https://picsum.photos/200") center/cover;
+  -webkit-mask-image:linear-gradient(to bottom,rgba(0,0,0,1) 70%,rgba(0,0,0,0));
+          mask-image:linear-gradient(to bottom,rgba(0,0,0,1) 70%,rgba(0,0,0,0));
+  -webkit-mask-mode:alpha;
+          mask-mode:alpha;
+  border:4px solid #fff;
+  transition:all .5s ease;
+}
+.logo:hover{
+  transform:scale(1.1);
+}
+
+/* 🔹 SHAPE-OUTSIDE Text Flow */
+.article{
+  width:90%;
+  margin:40px auto;
+  line-height:1.6;
+  color:#5a4424;
+  font-size:1rem;
+}
+.article img{
+  float:left;
+  width:220px;
+  height:220px;
+  border-radius:50%;
+  shape-outside:circle(50%);
+  shape-margin:20px;
+  margin:0 20px 20px 0;
+  object-fit:cover;
+}
+</style>
+</head>
+<body>
+  <div class="hero">
+    <div class="banner">CSS Shaping Magic</div>
+    <div class="logo"></div>
+
+    <div class="article">
+      <img src="https://picsum.photos/300" alt="Profile Shape">
+      <p>
+        This section merges the power of <strong>clip-path</strong>, <strong>mask-image</strong>,
+        and <strong>shape-outside</strong> to produce professional, organic layouts.
+        The top banner is clipped into a custom diagonal shape, the logo is revealed
+        with a smooth vertical gradient mask, and the text wraps naturally around a
+        circular floated image.
+      </p>
+      <p>
+        Such techniques are used in modern landing pages and magazine layouts for
+        eye-catching asymmetry. They combine perfectly with transitions and
+        responsive units for dynamic hero sections that truly stand out.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

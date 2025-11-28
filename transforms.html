@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        body {
+background: #0b0f19;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+}
+.box {
+padding: 10px;
+margin: 10px;
+width: 120px;
+height: 120px;
+background: linear-gradient(45deg, #4facfe, #ff416c);
+border-radius: 15px;
+transition: 1s ease;
+}
+.task1:hover{
+transform: translate(50px,50px);
+}
+.task2{
+    background: url(4k-mountain.jpg);
+    transform-origin: top left;
+    background-position: center;
+    background-size: cover;
+}
+.task2:hover{
+transform: rotate(-360deg);
+}
+.container .task3{
+    transform-origin: top;
+    background: #0539bd;
+    clip-path: polygon(50% 0%,0% 100%,100% 100% );
+    border-radius: 0px;
+}
+.task3:hover{
+    transform: scaleX(1.5);
+}
+.task4:hover{
+    transform: skew(10deg);
+}
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="box task1"><h3>task1</h3>moves diagonally (x=50px, y=50px)</div>
+    <div class="box task2"><h3>task2</h3>Rotate 360° on hover</div>
+    <div class="box task3"><h3>task3</h3>Scale a card up ( scale(1.1) ) on hover</div>
+    <div class="box task4"><h3>task4</h3>text banner tilt using skew(10deg) when hovered.</div>
+   </div>
+</body>
+</html>

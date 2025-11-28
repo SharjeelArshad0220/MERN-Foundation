@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography Mastery</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: antiquewhite;
+            padding: 10px;
+            font-family: 'Arimo', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        [class^="task"] {
+            box-sizing: border-box;
+            height: auto;
+            width: 90%;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 20px auto;
+            background-color: #e8f9f3;
+            color: #2c3e50;
+            overflow-wrap: break-word;
+            word-break: break-word;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        [class^="task"]:hover {
+            transform: scale(1.01);
+        }
+        .task1 {
+            border: 5px solid burlywood;
+            min-height: 400px;
+        }
+
+        .task2 {
+            border: 5px solid rgb(135, 148, 222);
+            min-height: 400px;
+            line-height: 2.5rem;
+            font-size: clamp(16px, 2vw, 20px);
+            font-weight: 700;
+            word-spacing: 3px;
+        }
+
+        .task3 {
+            border: 5px solid rgb(253, 183, 200);
+            min-height: 400px;
+        }
+
+        .task4 {
+            border: 5px solid rgb(240, 104, 138);
+            border-radius: 20px;
+            min-height: 100px;
+            max-width: 600px;
+            margin: auto;
+            font-size: larger;
+            font-weight: 900;
+            font-style: italic;
+            text-decoration: underline;
+            transition: all 1.3s ease-in-out;
+            line-height: 2.0rem;
+        }
+
+        .task5 {
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; */
+            margin: auto;
+            min-height: 100vh;
+            border: 2px solid rgb(247, 73, 247);
+            /* text-align: center; */
+        }
+
+        .task4:hover {
+            line-height: 2.2rem;
+            word-spacing: 3px;
+            font-weight: bolder;
+            transform: scale(1.02);
+        }
+
+        .task3 .big {
+            text-transform: capitalize;
+            font-weight: bolder;
+            font-size: 36px;
+        }
+
+        .task3 .small {
+            font-weight: 500;
+            font-size: 26px;
+            text-decoration: line-through;
+            transition: all 1s ease;
+            line-height: 2.5rem;
+            word-spacing: 3px;
+        }
+
+        .task3 :nth-child(2):hover {
+            text-decoration: underline;
+            transform: scale(1.01);
+        }
+
+        .task1 div {
+            box-sizing: border-box;
+            text-align: center;
+            min-height: 20%;
+            width: 80%;
+            background-color: rgb(223, 194, 250);
+            border: 2px solid rgb(187, 131, 240);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .task1 .first {
+            font-family: 'Arimo';
+        }
+
+        .task1 .sec {
+            font-family: 'Oswald';
+        }
+
+        .task1 .third {
+            font-family: 'Montserrat';
+        }
+
+
+        .task5 h2 {
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            font-weight: bolder;
+            font-family: 'Oswald';
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            /* position: relative;
+            left: 20%; */
+        }
+
+        .task5 .firstpara {
+            /* position: relative;
+            left: 10%; */
+            font-weight: 600;
+            font-size: 20px;
+            font-family: 'Montserrat';
+        }
+
+        .task5 h3 {
+            font-size: 36px;
+            text-align: left;
+            font-weight: bolder;
+            font-family: 'Oswald';
+        }
+
+        .task5 .secpara {
+            font-size: 20px;
+            font-family: 'Arimo';
+        }
+
+        .qoute {
+            text-align: center;
+            font-size: large;
+            font-style: italic;
+            font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 2rem;
+            font-weight: bold;
+            max-width: 700px;
+            margin: 20px auto;
+        }
+
+        .qoute p {
+            transition: all 1s ease-in;
+        }
+
+        .qoute p:hover {
+            text-decoration: underline;
+            transform: scaleX(1.02);
+        }
+
+        .firstcontent {
+            line-height: 1.5rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            word-spacing: 2px;
+            letter-spacing: 0.5px;
+        }
+
+        .seccontent {
+            line-height: 1.5rem;
+            font-family: 'Oswald';
+            word-spacing: 2px;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Task 1</h1>
+    <div class="task1">
+        <div class="first">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates odio incidunt enim ut cum
+                consequatur.</p>
+        </div>
+        <div class="sec">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut quibusdam facilis ipsum voluptas!
+                Dignissimos, ut?</p>
+        </div>
+        <div class="third">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe asperiores tempora, molestiae fugiat vel
+                repellat!</p>
+        </div>
+    </div>
+    <h1>Task 2</h1>
+    <div class="task2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perspiciatis ab, amet, distinctio sunt vero
+            molestiae nihil quisquam exercitationem laboriosam deserunt atque pariatur. Blanditiis, dicta.</p>
+    </div>
+    <h1>Task 3</h1>
+    <div class="task3">
+        <p class="big">Lorem, ipsum dolor.</p>
+        <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem esse consequatur
+            laboriosam sequi,
+            dignissimos modi voluptatibus! Exercitationem voluptatem ipsum animi porro provident eligendi assumenda
+            voluptatibus!</p>
+    </div>
+    <h1>Task 4</h1>
+    <div class="task4">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, repellendus!</p>
+    </div>
+    <h1>Task 5</h1>
+    <div class="task5">
+        <h2>Grand Task:</h2>
+        <h2>Mini Blog Post</h2>
+        <p class="firstpara">Combining all typography principles into a single article with headings, quotes,highlights,
+            and justified paraghraphs. <br>
+        </p>
+        <h3>Heading</h3>
+        <p class="secpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque soluta magnam exercitationem
+            est repudiandae iure!</p>
+
+        <blockquote class="qoute">
+            <p>A man who stands for nothing will fall for anything.</p>
+            <footer>— Malcolm X</footer>
+        </blockquote>
+
+
+        <div class="firstcontent">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, minus facere molestias, praesentium
+                veniam quae fugiat ullam laborum ipsa, porro eos quia tempora voluptas nisi atque a voluptatum officia
+                ducimus.</p>
+        </div>
+        <div class="seccontent">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, minus facere molestias, praesentium
+                veniam quae fugiat ullam laborum ipsa.</p>
+        </div>
+    </div>
+</body>
+
+</html>

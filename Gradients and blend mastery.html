@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients and Blending</title>
+    <style>
+        :root {
+  --clr-primary: #ff4b2b;
+  --clr-secondary: #ff416c;
+  --clr-highlight: #4facfe;
+  --clr-light: #f9f9f9;
+  --clr-dark: #1a1a1a;
+  --clr-text-light: #ffffff;
+  --clr-text-dark: #222222;
+  --clr-midnight: #0B0F19;
+  --clr-royal: #6C63FF;
+  --clr-flare: #FF4C8B;
+  --clr-aqua: #00E0FF;
+  --clr-snow: #F9FAFB;
+  --clr-void: #090B13;
+  --clr-spark: #FF9F1C;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(32, 54, 4, 0.959);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 100vw;
+}
+.box{
+width: 80%;
+margin:auto;
+margin-top: 10px;
+border-radius: 20px;
+box-shadow: 2px 1px 10px var(--clr-dark);
+transition: all 1s ease-in;
+padding: 10px;
+}
+.box:hover{
+transform: scale(1.03);
+}
+.task1{
+height: 15vh;
+    border-radius: 20px;
+    background: linear-gradient(to right,var(--clr-royal)33%,var(--clr-flare)66%,var(--clr-midnight)100%); 
+}
+.task2{
+    border-radius: 20px;
+    height: 40vh;
+background: radial-gradient(circle at top left,var(--clr-snow)3%,transparent 40%);
+}
+.task3
+{   height: 20vh;
+    border-radius: 20px;
+    box-shadow: 0 0 20px var(--clr-aqua);
+    width: calc(20vh);
+    background: conic-gradient(from 0deg at center , var(--clr-aqua),var(--clr-flare),var(--clr-primary),var(--clr-secondary),var(--clr-royal),var(--clr-spark));
+    border-radius: 100%;
+    margin: auto;
+}
+.task4{
+    height: auto;
+    min-height: 30vh;
+    padding: 10px;
+}
+.image{
+width: 90%;
+    height: 20vh;
+    margin: auto;
+    border-radius: 15px;
+    background: linear-gradient(to top , var(--clr-dark),var(--clr-void)),url('mountains.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+    color: var(--clr-text-light);
+    font-size: 3.5em;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.screen{
+    
+    background-blend-mode: screen;
+}
+.multiply{
+    background-blend-mode: multiply;
+}
+.overlay{
+    background-blend-mode: overlay;
+}
+    </style>
+</head>
+<body>
+     <div class="box">
+        <div class="task1"></div>
+    </div>
+     <div class="box">
+        <div class="task2"></div>
+    </div>
+    
+    <div class="box">
+        <div class="task3"></div>
+    </div>
+    <div class="box task4">
+        <div class="image screen">screen</div>
+        <div class="image multiply">multiply</div>
+        <div class="image overlay">overlay</div>
+    </div>
+</body>
+</html>

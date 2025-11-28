@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: antiquewhite;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .margin {
+            box-sizing: border-box;
+            width: 100%;
+            border: 5px solid rgb(202, 140, 64);
+            background-color: rgba(255, 205, 131, 0.842);
+            height: 100vh;
+            border-radius: 10px;
+        }
+
+        .border {
+            box-sizing: border-box;
+            width: 80%;
+            border: 5px solid rgb(52, 109, 77);
+            background-color: rgba(131, 255, 218, 0.842);
+            height: 80%;
+            border-radius: 10px;
+        }
+
+        .padding {
+            box-sizing: border-box;
+            width: 80%;
+            border: 5px solid rgb(202, 140, 64);
+            background-color: rgba(255, 205, 131, 0.842);
+            height: 80%;
+            border-radius: 10px;
+        }
+
+        .content {
+            box-sizing: border-box;
+            width: 80%;
+            height: 80%;
+            border-radius: 10px;
+            background-color: rgba(255, 205, 131, 0.842);
+            border: 5px solid rgb(202, 140, 64);
+        }
+
+        .task1 div{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+            position:sticky;
+        }
+        .task2{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+            position:sticky;
+        }
+        .task2{
+            box-sizing: border-box;
+            width: 90%;
+            height: 300px;
+            border: 2px solid coral;
+            background-color: cornflowerblue;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .task2 .box{
+            box-sizing: border-box;
+            width: 80%;
+            height: 80%;
+            border-radius: 10px;
+            background-color: rgb(2, 59, 109);
+            border: 2px solid rgb(63, 40, 5);
+        }
+        .small{
+            margin: 20px;
+        }
+        .large{
+            margin: 30px;
+        }
+        /* here between these two boxes the margin will only be applied of the box which one has larger number of margin like the .large box have 30px of margin then the gap between these boxes will be 30px omly the margin of small box will collappse with it and the larger one will be kept  */
+        .task3{
+            box-sizing: border-box;
+            width: 90%;
+            height: 300px;
+            border: 2px solid rgb(228, 80, 27);
+            background-color: rgb(163, 189, 236);
+            border-radius: 10px;
+            margin: 10px;
+            color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+            position:sticky;
+        }
+        .task3 .content{
+            box-sizing:content-box;
+            width: 80%;
+            height: 80%;
+            border-radius: 10px;
+            background-color: rgb(2, 59, 109);
+            border: 2px solid rgb(63, 40, 5);
+            padding: 20px;
+            margin: 20px;
+        }
+        .task3 .border{
+            box-sizing: border-box;
+            width: 80%;
+            height: 80%;
+            border-radius: 10px;
+            background-color: rgb(2, 59, 109);
+            border: 2px solid rgb(63, 40, 5);
+            padding: 20px;
+            margin: 20px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Task 1</h1>
+    <div class="task1">
+        <div class="margin"><p>MARGIN</p>
+            <div class="border"><p>Border</p>
+                <div class="padding"><p>Padding</p>
+                    <div class="content"><p>Content</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1>Task 2</h1>
+    <div class="task2">
+        <div class="box large"></div>
+        <div class="box small"></div>
+    </div>  
+    <h1>Task 3</h1>  
+    <div class="task3">
+        <div class="content">
+            <p>width = content only</p>
+        </div>
+        <div class="border">
+            <p>width = content + padding + border</p>
+        </div>
+    </div>
+    <h1>
+       Task 4 
+    </h1>
+    <div class="task4">
+        <p>description for boss <br> Boss humny media queries nhi prhi abhi tak toh mn kese use kr skta hu yar yeh hum media queries walay section mn na cover kr len?</p>
+    </div>
+    <h1>
+       Task 5
+    </h1>
+    <div class="task4">
+        <p>description for boss <br> Boss humny already iss tarah k cards kafi design kr liye hn so why should i create another one ?
+        </p>
+    </div>
+</body>
+
+</html>

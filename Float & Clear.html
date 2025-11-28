@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .box {
+            border: 4px solid black;
+            background-color: #cff8f3;
+            border-radius: 10px;
+        }
+
+        .task1 {
+            border: 0.2rem solid rgb(61, 1, 1);
+            border-radius: 10px;
+            margin: 5px;
+            width: 90%;
+        }
+
+        .task1 img {
+            float: left;
+            margin: 10px;
+            width: 60px;
+            height: 100px;
+        }
+
+        .task1 p {
+            color: #920e0e;
+            font-family: 'Creepster';
+            /* font-weight: bold; */
+        }
+
+        .task2 {
+            border: 4px solid rgb(61, 1, 1);
+            border-radius: 10px;
+            margin: 5px;
+            width: 90%;
+        }
+
+        .task2 img {
+            float: right;
+            margin: 10px;
+            width: 60px;
+            height: 100px;
+        }
+
+        .task2 p {
+            color: #920e0e;
+            font-family: 'Creepster';
+            /* font-weight: bold; */
+        }
+
+        .task3 {
+            position: relative;
+            border: 4px solid rgb(61, 1, 1);
+            border-radius: 10px;
+            margin: 5px;
+            width: 90%;
+            overflow: auto;
+            clear: both;
+        }
+
+        .task3 .first {
+            float: left;
+            margin: 10px;
+            width: 40%;
+            height: 100px;
+        }
+
+        .task3 .second {
+            /* position: absolute; */
+            float: right;
+            margin: 10px;
+            width: 40%;
+            height: 100px;
+        }
+
+        .task3 p {
+            padding: 5px;
+            clear: both;
+            font-weight: bolder;
+        }
+
+        .task4 {
+            position: relative;
+            border: 4px solid rgb(61, 1, 1);
+            border-radius: 10px;
+            margin: 5px;
+            width: 90%;
+            overflow: auto;
+            clear: both;
+        }
+
+        .task4 .first {
+            float: left;
+            margin: 10px;
+            width: 40%;
+            height: 100px;
+        }
+
+        .task4 .second {
+            /* position: absolute; */
+            float: right;
+            margin: 10px;
+            width: 40%;
+            height: 100px;
+        }
+
+        .task4 p {
+            padding: 5px;
+            clear: both;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="task1">
+            <div class="image"><img src="red hooded devil.jpg" alt="my image"></div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis delectus vero suscipit repellat nesciunt
+                aut quae iure eius enim sit, perferendis consequuntur possimus quidem ipsam est praesentium libero
+                quisquam reiciendis repellendus architecto atque dolores iste! Vel quasi vitae architecto quae.
+                Assumenda ducimus doloribus iure magni tempora animi a sapiente, perspiciatis ipsam hic ratione ad
+                molestias enim ut. Ullam error ut dolores quo aspernatur nihil hic, optio fugit in cupiditate rerum
+                molestiae quia ipsum illo porro officiis expedita? Sint, minus eum sed dolorum perferendis, officia ab
+                ea quos reprehenderit pariatur officiis eius tenetur inventore sit dignissimos consectetur
+                necessitatibus temporibus rerum atque?</p>
+        </div>
+        <div class="task2">
+            <div class="image"><img src="red hooded devil.jpg" alt="my image"></div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis delectus vero suscipit repellat nesciunt
+                aut quae iure eius enim sit, perferendis consequuntur possimus quidem ipsam est praesentium libero
+                quisquam reiciendis repellendus architecto atque dolores iste! Vel quasi vitae architecto quae.
+                Assumenda ducimus doloribus iure magni tempora animi a sapiente, perspiciatis ipsam hic ratione ad
+                molestias enim ut. Ullam error ut dolores quo aspernatur nihil hic, optio fugit in cupiditate rerum
+                molestiae quia ipsum illo porro officiis expedita? Sint, minus eum sed dolorum perferendis, officia ab
+                ea quos reprehenderit pariatur officiis eius tenetur inventore sit dignissimos consectetur
+                necessitatibus temporibus rerum atque?</p>
+        </div>
+        <div class="task3">
+            <img src="https://picsum.photos/200/200" alt="floating image" class="first">
+            <img src="https://picsum.photos/200/200" alt="floating image" class="second">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae dolorem voluptatibus cum, sunt ratione
+                voluptates non cupiditate? Quod illo impedit, iusto numquam, tenetur magni animi distinctio nisi
+                voluptas eum tempora non saepe veniam modi libero. Nobis natus mollitia explicabo esse recusandae
+                obcaecati! Exercitationem illum ullam ab tempore molestiae facere! Deleniti!
+            </p>
+        </div>
+        <div class="task4">
+            <img src="https://picsum.photos/200/200" alt="floating image" class="first">
+            <img src="https://picsum.photos/200/200" alt="floating image" class="second">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae dolorem voluptatibus cum, sunt ratione
+                voluptates non cupiditate? Quod illo impedit, iusto numquam, tenetur magni animi distinctio nisi
+                voluptas eum tempora non saepe veniam modi libero. Nobis natus mollitia explicabo esse recusandae
+                obcaecati! Exercitationem illum ullam ab tempore molestiae facere! Deleniti!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

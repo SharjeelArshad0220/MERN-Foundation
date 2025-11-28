@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors & Background</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 20px;
+            min-height: 200vh;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+        }
+
+        .card {
+            width: 100%;
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(250, 215, 169);
+            border: 8px solid #df99037a;
+            margin: 10px;
+        }
+
+        .task1 * {
+            min-height: 100px;
+            width: 90%;
+            border: 2px solid black;
+            margin: 10px;
+            text-align: center;
+            padding-top: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .task1 *:hover {
+            transform: scaleX(1.02);
+        }
+
+        .text1 {
+            background-color: #cac762;
+        }
+
+        .text2 {
+            background-color: rgb(194, 95, 95);
+        }
+
+        .text3 {
+            background-color: rgba(44, 181, 245, 0.925);
+        }
+
+        .text4 {
+            background-color: hsl(40, 100%, 50%);
+        }
+
+        .text5 {
+            background-color: cornflowerblue;
+        }
+
+        .task2 {
+            min-height: fit-content;
+            border: none;
+        }
+
+        .pallete {
+            width: 100%;
+            min-height: 20vh;
+        }
+
+        .one {
+            background-color: #03DAC6;
+        }
+
+        .two {
+            background-color: #FFB74D;
+        }
+
+        .three {
+            background-color: #CF6679;
+        }
+
+        .task3 {
+            background-color: black;
+            border: 1px solid #131372;
+        }
+
+        .layer {
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 60vh;
+            margin: auto;
+            background: linear-gradient(to top right, #131372, #c029c0);
+            border-radius: 20px;
+            color: white;
+            text-align: center;
+        }
+        h1, h2, h3,p {
+  font-size: clamp(1.5rem, 3vw, 3rem);
+}
+        .task4 {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)),
+            url(4k-mountain.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            /* text-align: center; */
+        }
+        .task4 h2, .task4 h3 {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  backdrop-filter: blur(1px);
+}
+    </style>
+</head>
+
+<body>
+    <div class="card task1">
+        <div class="text1">HEX</div>
+        <div class="text2">RGB</div>
+        <div class="text3">RGBA</div>
+        <div class="text4">HSL</div>
+        <div class="text5">Name</div>
+    </div>
+    <div class="card task2">
+        <h2><b>Theme Palette Design</b></h2>
+        <div class="pallete one"></div>
+        <div class="pallete two"></div>
+        <div class="pallete three"></div>
+    </div>
+    <div class="card task3">
+        <div class="layer">
+            <h1>layered background </h1>
+        </div>
+    </div>
+    <div class="card task4">
+        <h2>beautifull peak </h2>
+        <h3>in the lovely sky </h3>
+    </div>
+    <div class="card task5">
+        <h1>Already accomplished in task 4:</h1>
+        <p><pre>shows a full-width banner with these elements:
+
+Background image: A scenic mountain peak with a vibrant sunset sky.
+Text overlay:
+
+Headline: “beautiful peak”
+Subtext: “in the lovely sky”
+Both centered and in white for contrast.
+
+Color harmony: The white text contrasts well against the darkened image.
+Layering: It looks like there’s a slight dark overlay on the image to make the text pop.</pre></p>
+    </div>
+</body>
+
+</html>

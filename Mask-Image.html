@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mask-Image</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: ghostwhite;
+            padding: 40px;
+        }
+        img{
+            width: 600px;
+            height: 200px;
+        }
+        .task1{
+            mask-mode: alpha;
+            -webkit-mask-mode: alpha;
+            mask-image: linear-gradient(to top, transparent 50%, white 50%);
+            -webkit-mask-image: linear-gradient(to top, transparent 10%, white 60%);
+        }
+        .task2 img{
+            /* mask-mode: alpha;
+            -webkit-mask-mode: alpha; */
+            mask-image: linear-gradient(to right, white 10%, transparent 90%);
+            -webkit-mask-image: linear-gradient(to right, white 10%, transparent 90%);
+            transition:all 2s ease;
+            /* transition:-webkit-mask-image 2s ease; */
+        }
+        .task2 img:hover{
+            /* mask-mode: alpha;
+            -webkit-mask-mode: alpha; */
+            mask-image: linear-gradient(to right,transparent 30%,white 50%);
+            -webkit-mask-image: linear-gradient(to right,transparent 30%,white 50%);
+        }
+        .task3 img{
+            mask-image: radial-gradient(circle, white
+40%, transparent 70%);
+            -webkit-mask-image: radial-gradient(circle, white
+60%, transparent 80%);
+
+        }
+        .task4 img{
+            mask-image: url(thunder-svgrepo-com.svg);
+/* mask-repeat: no-repeat; */
+mask-size:contain;
+mask-position: right ;
+
+        }
+        .task5 img{
+clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 80%, 95% 85%, 85% 85%, 85% 100%, 70% 85%, 5% 85%, 0% 80%, 0% 5%);
+mask-image: url(heart-svgrepo-com.svg);
+mask-repeat: no-repeat;
+mask-position: right ;
+mask-size:contain;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="task1">
+            <img src="WALLPAPER FOR DESK.jpg" alt="">
+        </div>
+        <div class="task2">
+            <img src="WALLPAPER FOR DESK.jpg" alt="">
+        </div>
+        <div class="task3">
+            <img src="WALLPAPER FOR DESK.jpg" alt="">
+        </div>
+        <div class="task4">
+            <img src="WALLPAPER FOR DESK.jpg" alt="">
+        </div>
+        <div class="task5">
+            <img src="WALLPAPER FOR DESK.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

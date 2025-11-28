@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display visibilty Lesson</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .task1 {
+            background-color: rgb(211, 143, 55);
+            border: 2px solid rgb(114, 65, 0);
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .hidden {
+            margin: 20px 0px;
+            padding: 5px;
+            background-color: cornflowerblue;
+            display: none;
+            /* if we change the display value the element will be visible  */
+        }
+
+        .visibilityNonShow {
+            margin: 20px 0px;
+            padding: 30px;
+            background-color: rgb(124, 236, 171);
+            visibility: hidden;
+        }
+
+        .image {
+            width: 250px;
+            height: 150px;
+            border: 3px solid #222;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .transparent{
+            width: 250px;
+            height: 150px;
+            background-color: darkolivegreen;
+            border: 3px solid #222;
+            border-radius: 10px;
+            margin: 10px 0px;
+            color: azure;
+            font-size: xx-large;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            padding: 10px;
+        }
+        .transparent:hover{
+            opacity:0;
+        }
+        .overflow{
+            width: 250px;
+            height: 150px;
+            background-color: darkolivegreen;
+            border: 3px solid #222;
+            border-radius: 10px;
+            margin: 10px 0px;
+            color: azure;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header task1">
+            this is a div with default display block
+        </div>
+        <span class="task1">this is an inline span element</span>
+        <div class="hidden">this will be hidden</div>
+        <div class="visibilityNonShow"></div>
+        <div class="transparent">hover to make it transparent</div>
+        <div class="overflow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dolores illum dolore voluptatibus doloribus modi esse officia, aspernatur et recusandae quisquam amet cum iure, rem nemo officiis a! Vero, architecto cupiditate quas facilis porro, explicabo quasi rem maxime earum distinctio laborum exercitationem eos impedit sunt doloribus. Tenetur iure totam nihil cumque tempora. Minima eligendi aliquam ullam est similique nam reiciendis expedita maiores vero sequi. Modi nisi, ab at quaerat iusto reiciendis suscipit ullam! Sit dolores esse quae quam voluptas, cum vitae laborum, accusantium voluptates sint ut in incidunt ipsum veniam facilis? Unde dolorum, suscipit nam esse ratione ex, deleniti iusto aut autem delectus atque fuga fugiat! Fugit, tenetur ad adipisci, temporibus repudiandae consequatur nostrum enim, voluptatem mollitia laudantium deleniti veniam! At tenetur ducimus nobis totam. In autem nam repudiandae iste voluptatem placeat corrupti illum ut, accusamus corporis aliquam adipisci, reprehenderit molestias obcaecati, voluptatum ex quidem!
+        </div>
+        <div class="image"><img src="red hooded devil.jpg" alt=""></div>
+    </div>
+</body>
+
+</html>

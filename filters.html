@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters & Visuals</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .task1 {
+            background: url(4k-mountain.jpg), rgba(46, 148, 88, 0.685);
+            height: 70vh;
+            background-size: 100% 100%;
+            /* i have choosed this size because i wanted the image to fully fit in the container  */
+            background-position: top;
+            background-repeat: no-repeat;
+            filter: saturate(1.3) contrast(1.5) brightness(0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .task2 {
+            background: url(4k-mountain.jpg), rgba(46, 148, 88, 0.685);
+            height: 70vh;
+            background-size: 100% 100%;
+            /* i have choosed this size because i wanted the image to fully fit in the container  */
+            background-position: top;
+            background-repeat: no-repeat;
+            filter: brightness(1.1) contrast(1.2) sepia(0.8);
+            font-size: 1.3em;
+            font-weight: 700;
+            color: rgb(255, 255, 255);
+        }
+
+        .task3 {
+            background: url(4k-mountain.jpg), rgba(46, 148, 88, 0.685);
+            height: 70vh;
+            background-size: 100% 100%;
+            /* i have choosed this size because i wanted the image to fully fit in the container  */
+            background-position: top;
+            background-repeat: no-repeat;
+            filter: hue-rotate(200deg) saturate(1.3) brightness(0.8);
+            font-size: 1.3em;
+            font-weight: 700;
+            color: rgb(255, 255, 255);
+        }
+
+        .task1 .card {
+            margin-top: 10px;
+            width: 300px;
+            border: 2px solid transparent;
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            text-align: justify;
+            padding: 10px;
+            color: rgb(255, 255, 255);
+            font-size: 1.3em;
+        }
+
+        .card h2 {
+            font-weight: 700;
+            filter: drop-shadow(3px 3px 5px rgb(40, 109, 1));
+        }
+        .for-enjoy{
+            background-color: black;
+        }
+
+        .for-enjoy img {
+            filter: drop-shadow(0 0 10px aqua);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="task1">
+        <div class="card">
+            <h2>saturate(1.3)<br>contrast(1.5) brightness(0.9);</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus placeat soluta optio deserunt porro
+                laborum aliquam iure dolorem architecto, voluptatum incidunt? Quos velit fugit maxime tenetur, aut neque
+                provident vitae, itaque eaque eos</p>
+        </div>
+    </div>
+    <div class="task2">
+        <h2>brightness(1.1) contrast(1.2) sepia(0.8)</h2>
+    </div>
+    <div class="task3">
+        <h2>hue-rotate(200deg) + saturate(1.3) + brightness(0.8)</h2>
+    </div>
+    <!-- 4th task adjusted in task 1 -->
+    <div class="for-enjoy">
+        <img src="logo (2).png" alt="transparent logo"><h1 style="color: beige;">this transparent logo is shining </h1>
+    </div>
+</body>
+
+</html>

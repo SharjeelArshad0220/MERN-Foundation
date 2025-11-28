@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shape-outside</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(218, 218, 253);
+            padding: 40px;
+        }
+        .task1 img{
+            width: 200px;
+            height: 200px;
+            clip-path: circle(50% at 50% 50%);
+            float: left;
+            shape-outside:circle(50%);
+            margin: 10px;
+            shape-margin: 20px;
+        }
+        .task1{
+            width: auto;
+            min-height: 40vh;
+            border: 2px solid red;
+            border-radius: 20px;
+            background-color: rgb(81, 83, 83);
+            font-weight: bold;
+            padding: 10px;
+            text-align: justify;
+            margin: 10px;
+        }
+        .task2{
+            width: auto;
+            min-height: 40vh;
+            border: 2px solid red;
+            border-radius: 20px;
+            background-color: rgb(81, 83, 83);
+            font-weight: bold;
+            padding: 10px;
+            text-align: justify;
+        }
+        .task2 img{
+            width: 200px;
+            height: 200px;
+            clip-path: circle(50% at 50% 50%);
+            float: left;
+            shape-outside:polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0% 70%);
+            margin: 10px;
+        }
+        .task3{
+            width: auto;
+            min-height: 40vh;
+            border: 2px solid red;
+            border-radius: 20px;
+            background-color: rgb(81, 83, 83);
+            font-weight: bold;
+            padding: 10px;
+            text-align: justify;
+            margin: 10px;
+        }
+        .task3 img{
+            width: 200px;
+            height: 200px;
+            clip-path: circle(50% at 50% 50%);
+            float: left;
+            shape-outside:polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0% 70%);
+            margin: 10px;
+            shape-margin: 15px;
+        }
+        .task4{
+            width: auto;
+            min-height: 40vh;
+            border: 2px solid red;
+            border-radius: 20px;
+            background-color: rgb(81, 83, 83);
+            font-weight: bold;
+            padding: 10px;
+            text-align: justify;
+            margin: 10px;
+        }
+        .task4 img{
+            width: 200px;
+            height: 200px;
+            clip-path: circle(50% at 50% 50%);
+            float: right;
+            shape-outside:circle(50%);
+            margin: 10px;
+            shape-margin: 0px;
+        }
+        .task5{
+            width: auto;
+            min-height: 40vh;
+            border: 2px solid red;
+            border-radius: 20px;
+            background-color: rgb(81, 83, 83);
+            font-weight: bold;
+            padding: 10px;
+            text-align: justify;
+            margin: 10px;
+        }
+        .task5 img{
+            width: 200px;
+            height: 200px;
+            clip-path: circle(50% at 50% 50%);
+            shape-outside:polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0% 70%);
+            margin: 10px;
+            shape-margin: 0px;
+        }
+        .task5 .left{
+            float: left;
+        }
+        .task5 .right{
+            float: right;
+        }
+        </style>
+</head>
+<body>
+    <div class="task1">
+        <img src="red hooded devil.jpg" alt="">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fugit a repellat in minus, odio, obcaecati commodi asperiores dolorem reprehenderit nam adipisci deserunt porro neque, ullam aperiam cumque aspernatur rerum natus praesentium voluptatem impedit expedita. Placeat eligendi dignissimos repellendus? Sequi tempore quas beatae voluptas doloremque nemo earum similique dolores neque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatum nam facere, perspiciatis rerum quaerat accusamus! Possimus reprehenderit nostrum doloribus corrupti optio minus! Aliquam consequatur tempora repudiandae delectus nulla iusto magnam magni laboriosam libero illum ex totam esse alias cupiditate inventore ipsam voluptatum, placeat laudantium quas maiores. Architecto, beatae quos?
+        </p>
+    </div>
+    <div class="task2">
+                <img src="red hooded devil.jpg" alt="">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fugit a repellat in minus, odio, obcaecati commodi asperiores dolorem reprehenderit nam adipisci deserunt porro neque, ullam aperiam cumque aspernatur rerum natus praesentium voluptatem impedit expedita. Placeat eligendi dignissimos repellendus? Sequi tempore quas beatae voluptas doloremque nemo earum similique dolores neque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatum nam facere, perspiciatis rerum quaerat accusamus! Possimus reprehenderit nostrum doloribus corrupti optio minus! Aliquam consequatur tempora repudiandae delectus nulla iusto magnam magni laboriosam libero illum ex totam esse alias cupiditate inventore ipsam voluptatum, placeat laudantium quas maiores. Architecto, beatae quos?
+        </p>
+    </div>
+    <div class="task3">
+        <img src="red hooded devil.jpg" alt="">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fugit a repellat in minus, odio, obcaecati commodi asperiores dolorem reprehenderit nam adipisci deserunt porro neque, ullam aperiam cumque aspernatur rerum natus praesentium voluptatem impedit expedita. Placeat eligendi dignissimos repellendus? Sequi tempore quas beatae voluptas doloremque nemo earum similique dolores neque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatum nam facere, perspiciatis rerum quaerat accusamus! Possimus reprehenderit nostrum doloribus corrupti optio minus! Aliquam consequatur tempora repudiandae delectus nulla iusto magnam magni laboriosam libero illum ex totam esse alias cupiditate inventore ipsam voluptatum, placeat laudantium quas maiores. Architecto, beatae quos?
+        </p>
+    </div>
+    <div class="task4">
+        <img src="red hooded devil.jpg" alt="">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fugit a repellat in minus, odio, obcaecati commodi asperiores dolorem reprehenderit nam adipisci deserunt porro neque, ullam aperiam cumque aspernatur rerum natus praesentium voluptatem impedit expedita. Placeat eligendi dignissimos repellendus? Sequi tempore quas beatae voluptas doloremque nemo earum similique dolores neque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatum nam facere, perspiciatis rerum quaerat accusamus! Possimus reprehenderit nostrum doloribus corrupti optio minus! Aliquam consequatur tempora repudiandae delectus nulla iusto magnam magni laboriosam libero illum ex totam esse alias cupiditate inventore ipsam voluptatum, placeat laudantium quas maiores. Architecto, beatae quos?
+        </p>
+    </div>
+    <div class="task5">
+                <img src="red hooded devil.jpg" alt="" class="left">
+                <img src="red hooded devil.jpg" alt="" class="right">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fugit a repellat in minus, odio, obcaecati commodi asperiores dolorem reprehenderit nam adipisci deserunt porro neque, ullam aperiam cumque aspernatur rerum natus praesentium voluptatem impedit expedita. Placeat eligendi dignissimos repellendus? Sequi tempore quas beatae voluptas doloremque nemo earum similique dolores neque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatum nam facere, perspiciatis rerum quaerat accusamus! Possimus reprehenderit nostrum doloribus corrupti optio minus! Aliquam consequatur tempora repudiandae delectus nulla iusto magnam magni laboriosam libero illum ex totam esse alias cupiditate inventore ipsam voluptatum, placeat laudantium quas maiores. Architecto, beatae quos?
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+  .grid-container {
+    display: grid;
+    height: 100vh;
+    /* 3 Columns setup */
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 100px 1fr 100px;
+    
+    /* 👇 YAHAN CHANGE KARNA HAI */
+    grid-template-areas: 
+      "head head head"
+      "content content side"
+      "foot foot foot";
+  }
+
+  /* Giving Nicknames */
+  .header { grid-area: head; background: gold; }
+  .sidebar { grid-area: side; background: lightblue; }
+  .main { grid-area: content; background: coral; }
+  .footer { grid-area: foot; background: lightgreen; }
+</style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="header">HEADER</div>
+    <div class="sidebar">SIDEBAR</div>
+    <div class="main">MAIN CONTENT</div>
+    <div class="footer">FOOTER</div>
+  </div>
+</body>
+</html>

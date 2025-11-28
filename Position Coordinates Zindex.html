@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Coordinates Zindex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            height: 200vh;
+        }
+
+        .stage {
+            position: relative;
+            background-color: rgb(135, 85, 228);
+            border: 5px solid rgb(81, 26, 184);
+            border-radius: 5px;
+            padding: 15px;
+            width: 90%;
+            height: 90vh;
+            top: 5%;
+        }
+
+        .box {
+            transition: all 0.5s ease;
+            position: absolute;
+            margin-left: 20px;
+            border: 3px solid rgb(66, 39, 6);
+            background-color: beige;
+            width: 80%;
+            height: 80%;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .text {
+            position: absolute;
+            transform: rotate(-90deg);
+            right: -65px;
+            top: 25%;
+        }
+
+        .box1 {
+            background: #ff6b6b;
+            top: 10%;
+            left: 200px;
+            z-index: 1;
+        }
+
+        .box2 {
+            top: 10%;
+            left: 160px;
+            background: #4ecdc4;
+            z-index: 2;
+        }
+
+        .box3 {
+            top: 10%;
+            left: 120px;
+            background: #1a535c;
+            z-index: 3;
+        }
+
+        .box4 {
+            top: 10%;
+            left: 80px;
+            background: #ffe66d;
+            color: #333;
+            z-index: 4;
+        }
+
+        .box5 {
+            top: 10%;
+            left: 40px;
+            background: #ff9f1c;
+            z-index: 5;
+        }
+
+        .box:hover {
+            transform: scaleX(1.03);
+            z-index: 10;
+        }
+
+        .floating {
+            position: fixed;
+            bottom: 15px;
+            right: 10px;
+            border: 1px solid skyblue;
+            background-color: aqua;
+            padding: 10px 30px;
+            border-radius: 5px;
+            color: white;
+            text-shadow: 4px 2px 5px rgb(145, 144, 144);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stage">
+        <div class="box box1">
+            <div class="text">hover to see full view</div>
+        </div>
+        <div class="box box2">
+            <div class="text">hover to see full view</div>
+        </div>
+        <div class="box box3">
+            <div class="text">hover to see full view</div>
+        </div>
+        <div class="box box4">
+            <div class="text">hover to see full view</div>
+        </div>
+        <div class="box box5">
+            <div class="text">hover to see full view</div>
+        </div>
+    </div>
+    <button class="floating">Fixed CTA</button>
+</body>
+
+</html>

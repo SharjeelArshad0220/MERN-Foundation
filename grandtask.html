@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container,
+        .layer {
+            width: 70%;
+            margin: auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .layer {
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            background: linear-gradient(to bottom, rgba(81, 0, 128, 0.664), rgb(0, 128, 255)), url(4k-mountain.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transition: transform 0.5s ease-in-out;
+        }
+        .layer:hover{
+            transform: scale(1.02);       
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+        }
+        .pic {
+            width: 50%;
+            height: 50%;
+            background: url(red\ hooded\ devil.jpg);
+            background-size: 100% 100%;
+            clip-path: circle();
+            background-position:top center;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: white;
+            font-weight: bolder;
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="layer">
+            <div class="pic"></div>
+            <h2>Sharjeel Arshad</h2>
+            <p>The pro developer </p>
+        </div>
+    </div>
+</body>
+
+</html>

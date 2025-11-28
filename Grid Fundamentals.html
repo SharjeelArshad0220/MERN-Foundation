@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Fundamentals</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fff7e4;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .box {
+            width: 90%;
+            height: 90vh;
+            max-width: 900px;
+            background-color: #e7d6ad;
+            border: 4px solid #facd65;
+            border-radius: 5px;
+        }
+
+        .box .heroBanner {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            border: 2px solid #16eca5;
+            background-color: rgb(196, 133, 75);
+            width: 90%;
+            height: 20%;
+            border-radius: 30px;
+            margin: 20px 0%;
+            padding: 5px;
+            transition: all 0.5s ease;
+        }
+        .box .heroBanner:hover{
+            transform: scale(1.05) translateX(5%);
+        }
+
+        .box img {
+            position: absolute;
+            border: 3px solid rgb(190, 147, 118);
+            width: 80px;
+            height: 90px;
+            border-radius: 30px;
+            left: 10px;
+        }
+
+        .heading {
+            position: relative;
+            top: 20px;
+            text-align: center;
+            width: 70%;
+            height: 90px;
+            font-size: 0.8em;
+
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+            grid-template-rows: auto;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .items {
+            background-color: #b983ff;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .items:hover {
+            background-color: #5e17eb;
+            transform: scale(1.05);
+        }
+        .item1{
+            grid-column: span 2;
+        }
+        .item6{
+            grid-column: span 2;
+        }
+        .item5{
+            grid-row: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="heroBanner">
+            <div class="image"><img src="red hooded devil.jpg" alt="Project Logo Icone"></div>
+            <div class="heading">
+                <h1>this is my hero box for meri mrzi mera page ha tera nhi</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="items item1">1</div>
+            <div class="items item2">2</div>
+            <div class="items item3">3</div>
+            <div class="items item4">4</div>
+            <div class="items item5">5</div>
+            <div class="items item6">6</div>
+        </div>
+    </div>
+</body>
+
+</html>
