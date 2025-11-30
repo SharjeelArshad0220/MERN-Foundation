@@ -1,3 +1,3 @@
 git add .
-git commit -m "Done basics of Js and made some tiny applications"
+git commit -m "Day 4 - Arrays & CRUD Done"
 git push
