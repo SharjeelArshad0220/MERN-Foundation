@@ -1,0 +1,84 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body { font-family: 'Poppins', sans-serif; text-align: center; background-color: #222; color: white; margin-top: 50px; }
+        .card {
+            border: 2px solid #555;
+            padding: 20px;
+            width: 300px;
+            margin: 20px auto;
+            border-radius: 15px;
+            transition: all 0.5s ease;
+        }
+        button { padding: 10px 20px; font-size: 1.2rem; cursor: pointer; border-radius: 5px; border: none; }
+    </style>
+</head>
+<body>
+
+    <div id="result-card" class="card">
+        <h2>Result Pending...</h2>
+        <p>Click the button to check.</p>
+    </div>
+
+    <br>
+    <button onclick="generateResult()">Generate Result 📊</button>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+<!-- ---------------------------------------------  -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body { font-family: sans-serif; color: white; text-align: center; padding: 20px; }
+        body {
+    cursor: none; /* Asli mouse chupa diya (Optional - agar full feel chahiye) */
+    background-color: #111; /* Dark background taake glow nazar aye */
+    height: 100vh;
+    overflow: hidden; /* Scrollbars hata diye */
+}
+
+#cursor {
+    width: 20px;
+    height: 20px;
+    background-color: #38bdf8; /* Cyan Glow */
+    border-radius: 50%; /* Gol */
+    position: absolute; /* Hawa mein */
+    pointer-events: none; /* Click block na kare */
+    box-shadow: 0 0 20px #38bdf8, 0 0 60px #38bdf8; /* Neon Glow Effect */
+    transition: transform 0.1s ease; /* Thora smooth peecha kare */
+    transform: translate(-50%, -50%); /* Center align */
+    z-index: 9999; /* Sab se oopar */
+}
+        #table-container {
+            border: 2px dashed #444;
+            width: 300px;
+            min-height: 100px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #2a2a2a;
+        }
+
+        .line-item { font-size: 1.2rem; margin: 5px 0; border-bottom: 1px solid #444; padding: 5px; }
+        
+        button { padding: 12px 24px; font-size: 1rem; cursor: pointer; background: #38bdf8; border: none; border-radius: 5px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h1>The Visual Architect 🏗️</h1>
+    <button onclick="printTable()">Build Table</button>
+
+    <div id="table-container">
+        Table will appear here...
+    </div>
+<div id="cursor"></div>
+    <script src="script.js"></script>
+</body>
+</html>

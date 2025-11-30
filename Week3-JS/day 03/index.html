@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse Tracker</title>
+   <style>#magic-circle {
+    height: 30px;
+    width: 30px;
+    border: 2px solid cyan;
+    border-radius: 50%;
+    
+    /* CHANGE IS HERE 👇 */
+    position: fixed;  /* Absolute nahi, Fixed rakho */
+    /* ---------------- */
+    
+    top: 0;           /* Default position start */
+    left: 0;          /* Default position start */
+    
+    pointer-events: none;
+    box-shadow: 0 0 15px cyan;
+    transition: transform 0.1s ease; /* 'all' hata kar sirf transform/position rakho taake lag na ho */
+    transform: translate(-50%, -50%); /* Center align taake mouse circle ke beech mein ho */
+    z-index: 9999;
+}
+
+body {
+    margin: 0; /* Yeh zaroori hai taake browser apni taraf se gap na de */
+    height: 100vh;
+    background-color: #111;
+    cursor: none; /* Asli mouse gayab */
+}</style>
+</head>
+<body>
+
+    <div id="magic-circle"></div>
+    
+    <h1 style="color: white; text-align: center; margin-top: 20%;">Move your Mouse! 🖱️</h1>
+
+    <script src="script.js"></script>
+</body>
+</html>
