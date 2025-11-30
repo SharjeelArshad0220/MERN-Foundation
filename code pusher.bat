@@ -1,3 +1,3 @@
 git add .
-git commit -m "Restructured: Organized Portfolio into separate folder"
+git commit -m "Added missing images & updated URLs"
 git push
